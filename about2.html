@@ -6,6 +6,22 @@
   <link rel="Stylesheet" href="final.css">
   <script src="final.js"></script>
 
+  <meta charset = "UTF-8">
+  <title>textBoxes.html</title>
+  <script type = "text/javascript">
+   // from textBoxes.html
+   function sayHi(){
+   var txtName = document.getElementById("txtName");
+   var txtOutput = document.getElementById("txtOutput");
+   var name = txtName.value;
+   txtOutput.value = "Hi there, " + name + "!"
+   } // end sayHi
+  </script>
+  <link rel = "stylesheet"
+    type = "text/css"
+    href = "textBoxes.css" />
+  </head>
+
 </head>
 
 
@@ -16,12 +32,48 @@
     <a href="about2.html">App</a>
     <a href="donate.html">Donate Now</a>
     <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit">Submit</button>
+
+        <input id="demo" type="text" placeholder="Search.." name="search">
+
+        <script>
+        function myFunction() {
+          if (document.getElementById("demo").value == "soda can"){
+            alert("Soda Can: Blue Recycle Bin")
+          }
+          if (document.getElementById("demo").value == "plastic bottle"){
+            alert("Plastic Bottle: Blue Recycle Bin. Be sure to remove the bottle cap and wrapper.")
+          }
+          if (document.getElementById("demo").value == "tree trimmings"){
+            alert("Tree Trimmings: Green Waste Bin")
+          }
+          if (document.getElementById("demo").value == "grass"){
+            alert("Grass: Green Waste Bin")
+          }
+          if (document.getElementById("demo").value == "pizza box"){
+            alert("Pizza Box: Black Trash Bin")
+          }
+          if (document.getElementById("demo").value == "glass jars"){
+            alert("Glass Bottles/Jars: Blue Recycling Bin")
+          }
+          if (document.getElementById("demo").value == "food"){
+            alert("Food Waste: Black Trash Bin")
+          }
+          if (document.getElementById("demo").value == "electronics"){
+            alert("Most Electronics: Black Trash Bin")
+          }
+          if (document.getElementById("demo").value == "paper"){
+            alert("Paper Products: Blue Recycling Bin")
+          }
+
+        }
+        </script>
+    <button onclick="myFunction()" type="submit">Submit</button>
+
       </form>
     </div>
   </div>
+  <!-- <p id="demo"></p> -->
+
 
 <div style="padding-left:16px"> </div>
 
@@ -49,3 +101,4 @@ of the product which causes more problems for the environment.</p>
 </body>
 
 </html>
+
